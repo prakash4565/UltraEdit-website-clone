@@ -1,0 +1,214 @@
+:root {
+    --primary-color: #ffffff;
+    --secomdary-color: #222222;
+  }
+  
+  .logo img {
+    width: 150px;
+    height: 50px;
+    position: relative;
+    right: 52px;
+  }
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  .right ul {
+    display: flex;
+    gap: 30px;
+    position: relative;
+    top: 10px;
+    right: 40px;
+  }
+  .right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+  }
+  .right ul li a {
+    text-decoration: none;
+    color: var(--secomdary-color);
+    font-family: "Segoe UI", sans-serif;
+    font-weight: bold;
+  }
+  .content {
+    text-align: center;
+    margin-top: 50px;
+    font-family: "Segoe UI";
+    color: var(--secomdary-color);
+  }
+  .content h1 {
+    font-size: 40px;
+    font-weight: 400;
+  }
+  .content h1 strong {
+    font-weight: 700;
+  }
+  .content h3 {
+    font-size: 20px;
+    padding: 0 130px;
+    font-weight: 400;
+  }
+  .content .maclinuxdownload a {
+    padding: 12px 20px !important;
+    min-height: 48px;
+    min-width: 256px;
+    color: var(--primary-color);
+    background-color: #09a6bd;
+    border: transparent;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  .content .maclinuxdownload {
+    padding-top: 15px;
+  }
+  .content .download {
+    padding-top: 5px;
+    text-align: left;
+  }
+  .content .download img {
+    position: relative;
+    top: 65px;
+    left: 121px;
+  }
+  .content .download .downloadtxt a {
+    text-decoration: none;
+    color: var(--secomdary-color);
+  }
+  .content .download .downloadtxt {
+    padding-inline-start: 70px;
+  }
+  .langdownloads {
+    padding: 30px 89px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+  }
+  .blue {
+    background-color: #09a6bd;
+  }
+  .green {
+    background-color: #5cb85c;
+  }
+  button {
+    min-height: 28px;
+    border: transparent;
+    border-radius: 3px;
+    font-family: "Segoe UI", sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    color: var(--primary-color);
+  }
+  .langdownloads h3 strong {
+    font-size: 19px;
+  }
+  .langdownloads h3 {
+    padding-bottom: 30px;
+  }
+  .langdownloads h3 small {
+    font-size: 12px;
+    font-weight: 400;
+  }
+  footer {
+    background-color: var(--secomdary-color);
+    height: 30vw;
+    margin: 80px -16px -16px -16px;
+    color: var(--primary-color);
+    font-family: "segoe ui";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: bold;
+    flex-direction: column;
+  }
+  footer a {
+    text-decoration: none;
+    color: var(--primary-color);
+    padding: 10px;
+  }
+  
+  @media only screen and (max-width: 1080px) {
+    .logo img {
+      width: 150px;
+      height: 50px;
+      position: relative;
+      top: 5px;
+      right: 120px;
+    }
+  
+    nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .right ul {
+      justify-content: flex-start;
+      flex-direction:  row;
+      gap: 10px;
+    }
+  
+    .right ul li {
+    }
+  
+    .content {
+      margin-top: 30px;
+      padding: 0 20px;
+    }
+  
+    .content h1 {
+      font-size: 24px;
+    }
+  
+    .content h3 {
+      padding: 0;
+      font-size: 16px;
+    }
+  
+    .content .maclinuxdownload {
+      padding-top: 10px;
+    }
+  
+    .content .download {
+      padding-top: 0;
+      text-align: center;
+    }
+  
+    .content .download img {
+      width: 40px;
+      position: relative;
+      top: 57px;
+      left: -170px;
+    }
+  
+    .content .download .downloadtxt {
+      padding-inline-start: 0;
+    }
+  
+    .langdownloads {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+  
+    .blue,
+    .green {
+      padding: 10px;
+      border-radius: 5px;
+    }
+  
+    footer {
+      font-size: 24px;
+      margin: -10px;
+      margin-top: 30px;
+      display: flex;
+    }
+    footer .social {
+      padding-top: 20px;
+    }
+    footer a {
+      padding-right: 20px;
+    }
+  }
+  
